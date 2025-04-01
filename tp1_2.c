@@ -1,6 +1,6 @@
 #include <stdio.h> 
 
-int cuadrado(int numero);
+void cuadrado(int numero);
 
 int main(){
 
@@ -10,12 +10,14 @@ int main(){
     printf("Ingresa un numero: ");
     scanf("%d", &numero);
 
-
-    resultado = cuadrado(numero);
-    printf("El cuadrado de %d es %d\n", numero, resultado);
+    cuadrado(numero);
+    
+    
 
 return 0;
 }
-int cuadrado(int numero) {
-    return numero * numero;
+void cuadrado(int numero) {
+    int resultado = numero * numero;
+    printf("El cuadrado de %d es %d\n", numero, resultado);
+    
 }
