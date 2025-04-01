@@ -24,3 +24,17 @@ El archivo _.gitignore_ es simplemente un archivo de texto donde se especifican 
 3. Usar patrones con comodines: Puedes usar * para ignorar cualquier archivo o carpeta que coincida con el patrón.
 
 3. Ignorar extensiones de archivo: Puedes ignorar todos los archivos con una extensión determinada (por ejemplo, todos los archivos .log).
+
+#### RESPUESTA 3)g
+** ¿Por qué el resultado es el mismo en los apartados 2 y 3? ** <br>
+
+En los apartados 2 y 3, el resultado es el mismo porque tanto el puntero ptr como la dirección de x apuntan a la misma ubicación en memoria. ptr almacena la dirección de memoria de x, y &x también devuelve la dirección de memoria de x. Por lo tanto, ambos imprimen la misma dirección. <br>
+
+** ¿Qué obtiene en el punto 4? ** <br>
+
+En el punto 4, obtenemos la dirección de memoria del puntero ptr. Esto significa que estamos imprimiendo la ubicación en la que la variable puntero ptr está almacenada en la memoria, no la dirección de x. Esta es una dirección diferente a la de x.
+
+** ¿Es igual a los anteriores? ¿Por qué? ** <br>
+
+No, el resultado del punto 4 no es igual a los puntos 2 y 3, ya que estamos imprimiendo la dirección de memoria donde el puntero ptr se encuentra en la memoria, mientras que los puntos 2 y 3 imprimen la dirección de la variable x. La dirección de memoria del puntero ptr y la dirección de x son diferentes.
+
